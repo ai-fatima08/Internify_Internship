@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>BREW-TIFUL A cafe for the slow, dark-roast kind of morning</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('brewtiful-theme');
+          if (saved) document.documentElement.setAttribute('data-theme', saved);
+        } catch (e) {}
+      })();
+    </script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div
+      class="ambient"
+      id="ambient"
+      aria-hidden="true"></div>
+    <div
+      class="cursor-glow"
+      id="cursorGlow"
+      aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a
+          href="index.html"
+          class="nav__logo">
+          <span class="nav__logo-mark">
+            <img
+              src="D:\Internship\Internify\project3\images\logo.png"
+              alt="" />
+          </span>
+          Brew-Tiful
+        </a>
+
+        <ul class="nav__links">
+          <li>
+            <a
+              href="index.html"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch between Espresso Noir (dark) and Latte Morning (light)">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none">
+              <circle
+                cx="12"
+                cy="12"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.5" />
+              <path
+                d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navDrawer">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="nav-drawer"
+        id="navDrawer">
+        <ul class="nav-drawer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/hero.jpg"
+          aria-hidden="true">
+          <source
+            src="D:\Internship\Internify\project3\images\InShot_20260929_091135040.mp4"
+            type="video/mp4" />
+        </video>
+
+        <div class="container">
+          <p class="eyebrow rise rise--1">
+            Freshly roasted, locally brewed in Pakistan
+          </p>
+          <h1 class="hero__title rise rise--2">
+            Dark roasts, <em>Poured Slow</em>, finished with a little Heart.
+          </h1>
+          <p class="hero__sub rise rise--3">
+            Freshly roasted, slowly poured, and hand-finished. Every cup at
+            Brew-Tiful is made just for you. Every cup at Brew-Tiful starts with
+            beans we roast ourselves then it's brewed the moment you order, and
+            finished by hand with a little heart on top.
+          </p>
+          <div class="hero__actions rise rise--4">
+            <a
+              href="about.html"
+              class="btn btn--outline"
+              >Meet the Roasters</a
+            >
+            <a
+              href="contact.html"
+              class="btn btn--solid"
+              >Visit the Cafe</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="neon"
+          aria-label="Open daily, 7am to 4pm">
+          Open
+          <small>Daily, 7AM to 7PM</small>
+        </div>
+      </section>
+
+      <div
+        class="marquee"
+        aria-hidden="true">
+        <div class="marquee__track">
+          <span>Golden Roast</span><span>Velvet Brew</span
+          ><span>Poured by hand</span><span>Freshly Roasted</span
+          ><span>Open daily, 7AM to 7PM</span><span>Golden Roast</span
+          ><span>Velvet Brew</span><span>Poured by hand</span
+          ><span>Freshly Roasted</span><span>Open daily, 7AM to 7PM</span>
+        </div>
+      </div>
+
+      <section class="section section--bordered">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">On the menu</p>
+            <h2 class="section__title">
+              Two signature blends and everything we brew starts here <br />
+            </h2>
+            <br />
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <div class="media">
+                <img
+                  src="D:\Internship\Internify\project3\images\gold1.jpeg"
+                  alt="A pour-over of Golden Roast coffee"
+                  loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Golden Roast</h3>
+                <p class="card__text">
+                  Bright and delicate our lighter house blend carries honey and
+                  stone-fruit notes, roasted just past first crack. Best as a
+                  pour-over, no sugar needed.
+                </p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="media">
+                <img
+                  src="D:\Internship\Internify\project3\images\brew2.jpeg"
+                  alt="A latte with a heart poured in the foam"
+                  loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Velvet Brew</h3>
+                <p class="card__text">
+                  Dark, silky, and low in acidity. Cocoa and toasted hazelnut
+                  lead every note the blend we pour our heart into, one latte at
+                  a time.
+                </p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="media">
+                <img
+                  src="D:\Internship\Internify\project3\images\pastry2.jpeg"
+                  alt="Fresh croissants in the pastry case"
+                  loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Pastry case</h3>
+                <p class="card__text">
+                  Fresh from the oven. Brown-butter croissants, cardamom buns,
+                  and whatever the season is whispering
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--bordered">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Inside the cafe</p>
+            <h2 class="section__title">
+              Golden light, grinding beans, and seats that face the street.
+            </h2>
+            <br />
+          </div>
+
+          <div class="gallery reveal">
+            <div class="media">
+              <img
+                src="D:\Internship\Internify\project3\images\place (1).jpeg"
+                alt="Cafe interior with warm lighting"
+                loading="lazy" />
+            </div>
+            <div class="media">
+              <img
+                src="D:\Internship\Internify\project3\images\place (3).jpeg"
+                alt="Barista pouring latte art"
+                loading="lazy" />
+            </div>
+            <div class="media">
+              <img
+                src="D:\Internship\Internify\project3\images\place (6).jpeg"
+                alt="Coffee beans in the roaster"
+                loading="lazy" />
+            </div>
+            <div class="media">
+              <img
+                src="D:\Internship\Internify\project3\images\place (2).jpeg"
+                alt="Customers at the counter"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote reveal">
+        <div class="container">
+          <p class="quote__mark">&ldquo;</p>
+          <p class="quote__text">
+            A cup should look like someone cared before you've even tasted it.
+            That's the whole reason we still pour by hand.
+          </p>
+          <p class="quote__by">S Fatima</p>
+        </div>
+      </section>
+
+      <div class="cta-banner reveal">
+        <h2 class="cta-banner__title">
+          Where the coffee is slow and the moments are slower
+        </h2>
+        <a
+          href="contact.html"
+          class="btn btn--outline"
+          >Find the cafe</a
+        >
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Brew-Tiful Coffee House.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

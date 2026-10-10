@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>About | Brew-tiful</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('brewtiful-theme');
+          if (saved) document.documentElement.setAttribute('data-theme', saved);
+        } catch (e) {}
+      })();
+    </script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div
+      class="ambient"
+      id="ambient"
+      aria-hidden="true"></div>
+    <div
+      class="cursor-glow"
+      id="cursorGlow"
+      aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a
+          href="index.html"
+          class="nav__logo">
+          <span class="nav__logo-mark">
+            <img
+              src="D:\Internship\Internify\project3\images\logo.png"
+              alt="" />
+          </span>
+          Brew-Tiful
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a
+              href="about.html"
+              aria-current="page"
+              >About</a
+            >
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch between Espresso Noir (dark) and Latte Morning (light)">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none">
+              <circle
+                cx="12"
+                cy="12"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.5" />
+              <path
+                d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navDrawer">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="nav-drawer"
+        id="navDrawer">
+        <ul class="nav-drawer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow rise rise--1">About Brew-Tiful</p>
+          <h1 class="page-hero__title rise rise--2">
+            Started with a <em>Home Roaster</em>
+            <br />
+            Right here in Pakistan.
+          </h1>
+          <br />
+          <p class="page-hero__sub rise rise--3">
+            Nine years later, we roast in small batches and still pour every
+            heart on top by hand, even at 7am on a Monday.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--bordered">
+        <div class="container story">
+          <div class="reveal">
+            <p>
+              Brew-Tiful began with a secondhand machine in a small kitchen and
+              love for the coffee and a very stubborn idea: <br />
+              <em> "That Pakistan deserved better coffee" </em>
+              <br />
+            </p>
+            <p>
+              Fatima started roasting in her Islamabad kitchen, filling the
+              whole apartment with a smell so good that neighbours began
+              knocking just to ask what was going on. Some stayed for a cup.
+              Most came back the next morning.
+            </p>
+            <p>
+              Word travelled faster than she expected. Within a year, her beans
+              were on the shelves of the local farmers market. Within three,
+              she'd taken over the little storefront on Amber Row that
+              Brew-Tiful still calls home a small space with big windows, where
+              the roaster sits right behind the counter, in full view of anyone
+              ordering.
+            </p>
+            <p>
+              You can watch the beans go from green to Golden Roast to Velvet
+              Brew while you wait for your cup. Nothing is roasted more than
+              five days before it's brewed because coffee, like anything worth
+              doing, is best when it's fresh. And every espresso drink is
+              finished with a little latte art usually a heart because Fatima
+              still remembers the first one a barista ever poured for her. That
+              small gesture turned her from a customer into a regular. She's
+              never forgotten it. No one who walks through our door should ever
+              feel like just an order number.
+            </p>
+          </div>
+          <div class="story__side reveal">
+            <div class="media">
+              <img
+                src="D:\Internship\Internify\project3\images\profile.jpeg"
+                alt="Elena Cruz at the roaster"
+                loading="lazy" />
+            </div>
+            <blockquote class="story__pull">
+              <em>
+                "You can automate the roast curve. <br />
+                You can't automate someone caring how your cup looks."
+              </em>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--bordered">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">From Bean to cup</p>
+            <h2 class="section__title">
+              What happens before your order is called.
+            </h2>
+          </div>
+
+          <div class="process reveal">
+            <div class="step">
+              <p class="step__title">Source the Beans</p>
+              <p class="step__text">
+                Green beans come in from three small farms we've bought from for
+                years.
+              </p>
+            </div>
+            <div class="step">
+              <p class="step__title">Roast in-house</p>
+              <p class="step__text">
+                Small batches, roasted twice a week, tasted and logged after
+                every run.
+              </p>
+            </div>
+            <div class="step">
+              <p class="step__title">Rest &amp; grind</p>
+              <p class="step__text">
+                Beans rest a few days to de-gas, then are ground fresh per
+                order.
+              </p>
+            </div>
+            <div class="step">
+              <p class="step__title">Pull the shot</p>
+              <p class="step__text">
+                Dialed in daily, since humidity and roast date both shift the
+                grind.
+              </p>
+            </div>
+            <div class="step">
+              <p class="step__title">Pour the heart</p>
+              <p class="step__text">
+                Steamed milk poured slow, finished with the same heart, every
+                time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">What we care about</p>
+            <h2 class="section__title">A few things that don't change.</h2>
+          </div>
+
+          <ul class="values reveal">
+            <li>
+              <strong>Roasted to be tasted, not admired</strong>A pretty bag
+              means nothing if the cup doesn't back it up. We taste every batch
+              before it goes out front.
+            </li>
+            <li>
+              <strong>Direct relationships with farms</strong>We know the
+              growers behind both house blends by name, and we pay well above
+              commodity price.
+            </li>
+            <li>
+              <strong>No cup leaves without care</strong>Whether it's a drip
+              coffee or a latte, someone here made sure it looked right before
+              it reached you.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Brew-Tiful Coffee House.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
