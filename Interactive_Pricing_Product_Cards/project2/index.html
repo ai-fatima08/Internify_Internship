@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Aurelin Watches made to move through life with you</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div
+      class="grain"
+      aria-hidden="true"></div>
+    <div
+      class="ambient"
+      id="ambient"
+      aria-hidden="true"></div>
+
+    <header class="hero">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="D:\Internship\Internify\project2\images\w (2).png">
+        <source
+          src="D:\Internship\Internify\project2\images\WhatsApp Video 2026-09-30 at 16.16.46.mp4"
+          type="video/mp4" />
+        <!-- Fallback for browsers that don't support video -->
+        Your browser does not support the video tag.
+      </video>
+      <p class="hero__mark">Aurelin Timepieces</p>
+
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title">Own Your<br /><em>Time</em></h1>
+          <p class="hero__sub">
+            Precision engineering, refined materials, and timeless design
+            crafted into a watch made to move through life with you.
+          </p>
+          <a
+            href="#products"
+            class="hero__cta"
+            >Shop the Collection</a
+          >
+        </div>
+
+        <div class="hero__showcase">
+          <img
+            src="D:\Internship\Internify\project2\images\w (2).png"
+            alt="Aurelin Rose Sand watch"
+            class="hero__watch" />
+        </div>
+      </div>
+
+      <div class="hero__trust">
+        <span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+              stroke="currentColor"
+              stroke-width="1.3" />
+            <path
+              d="M12 7v5l3.2 2"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round" />
+          </svg>
+          72-Hour Power Reserve
+        </span>
+        <span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <path
+              d="M12 2 4 5v6c0 5 3.4 8.7 8 9 4.6-.3 8-4 8-9V5l-8-3Z"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linejoin="round" />
+          </svg>
+          Sapphire Crystal
+        </span>
+        <span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <path
+              d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 3v7l5 3"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          100M Water Resistance
+        </span>
+      </div>
+    </header>
+
+    <section class="detail">
+      <div class="detail__side reveal">
+        <h2 class="detail__title">Designed around the way you live.</h2>
+      </div>
+      <div class="detail__side reveal">
+        <p class="detail__text">
+          From quiet mornings to defining occasions, every Aurelin brings
+          thoughtful proportions, mechanical precision, and effortless character
+          to the moment.
+        </p>
+        <a
+          href="#products"
+          class="detail__link"
+          >Explore the Collection &rarr;</a
+        >
+      </div>
+    </section>
+
+    <main
+      class="plans"
+      id="products">
+      <div class="controls">
+        <div
+          class="filter-group"
+          role="group"
+          aria-label="Filter watches by style">
+          <span
+            class="filter-indicator"
+            id="filterIndicator"
+            aria-hidden="true"></span>
+          <button
+            class="filter-btn is-active"
+            data-filter="all"
+            type="button">
+            All watches
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="basic"
+            type="button">
+            Classic
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="premium"
+            type="button">
+            Luxury
+          </button>
+        </div>
+
+        <div class="cycle-toggle">
+          <span class="cycle-label cycle-label--monthly is-active"
+            >Pay in full</span
+          >
+          <button
+            class="switch"
+            id="cycleSwitch"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle between paying in full and monthly installments"
+            type="button">
+            <span class="switch__thumb"></span>
+          </button>
+          <span class="cycle-label cycle-label--yearly"
+            >Pay monthly <em>0% APR</em></span
+          >
+        </div>
+      </div>
+
+      <div
+        class="card-grid"
+        id="cardGrid">
+        <article
+          class="card"
+          data-category="basic">
+          <div class="card__media">
+            <img
+              src="D:\Internship\Internify\project2\images\w (5).png"
+              alt="Aurelin Noir watch"
+              loading="lazy" />
+            <button
+              class="card__wishlist"
+              type="button"
+              aria-label="Save to wishlist"
+              aria-pressed="false">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true">
+                <path
+                  d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.6" />
+              </svg>
+            </button>
+            <span class="card__rating"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="m12 2 3.1 6.3 7 1-5 4.9 1.2 7-6.3-3.3L5.7 21l1.2-7-5-4.9 7-1Z" /></svg
+              >4.7 <i>(212)</i></span
+            >
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Aurelin Noir</h2>
+            <p class="card__desc">
+              Black dial, gold accents, hand-finished leather strap.
+            </p>
+            <div class="card__specs">
+              <span>40mm</span><span>Sapphire</span><span>Leather</span>
+            </div>
+            <p class="card__price">
+              <span
+                class="card__amount"
+                data-monthly="121"
+                data-yearly="1450"
+                >$1,450</span
+              >
+              <span class="card__period">one-time</span>
+            </p>
+            <button
+              class="card__cta"
+              type="button">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-category="premium">
+          <div class="card__media">
+            <img
+              src="D:\Internship\Internify\project2\images\w (2).png"
+              alt="Aurelin Mesh watch"
+              loading="lazy" />
+            <button
+              class="card__wishlist"
+              type="button"
+              aria-label="Save to wishlist"
+              aria-pressed="false">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true">
+                <path
+                  d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.6" />
+              </svg>
+            </button>
+            <span class="card__rating"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="m12 2 3.1 6.3 7 1-5 4.9 1.2 7-6.3-3.3L5.7 21l1.2-7-5-4.9 7-1Z" /></svg
+              >4.6 <i>(158)</i></span
+            >
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Aurelin Mesh</h2>
+            <p class="card__desc">
+              Brushed steel case with a cool, everyday mesh band.
+            </p>
+            <div class="card__specs">
+              <span>38mm</span><span>Sapphire</span><span>Steel mesh</span>
+            </div>
+            <p class="card__price">
+              <span
+                class="card__amount"
+                data-monthly="82"
+                data-yearly="980"
+                >$980</span
+              >
+              <span class="card__period">one-time</span>
+            </p>
+            <button
+              class="card__cta"
+              type="button">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="card card--popular"
+          data-category="basic">
+          <span class="card__badge">Bestseller</span>
+          <div class="card__media">
+            <img
+              src="D:\Internship\Internify\project2\images\w (4).png"
+              alt="Aurelin Rose Sand watch"
+              loading="lazy" />
+            <button
+              class="card__wishlist"
+              type="button"
+              aria-label="Save to wishlist"
+              aria-pressed="false">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true">
+                <path
+                  d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.6" />
+              </svg>
+            </button>
+            <span class="card__rating"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="m12 2 3.1 6.3 7 1-5 4.9 1.2 7-6.3-3.3L5.7 21l1.2-7-5-4.9 7-1Z" /></svg
+              >4.9 <i>(406)</i></span
+            >
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Aurelin Rose Sand</h2>
+            <p class="card__desc">
+              Rose-gold case over a warm sand dial. The one everyone asks about.
+            </p>
+            <div class="card__specs">
+              <span>36mm</span><span>Sapphire</span><span>Rose-gold mesh</span>
+            </div>
+            <p class="card__price">
+              <span class="card__was">$2,100</span>
+              <span
+                class="card__amount"
+                data-monthly="158"
+                data-yearly="1890"
+                >$1,890</span
+              >
+              <span class="card__period">one-time</span>
+            </p>
+            <button
+              class="card__cta card__cta--primary"
+              type="button">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-category="premium">
+          <div class="card__media">
+            <img
+              src="D:\Internship\Internify\project2\images\w (3).png"
+              alt="Aurelin Chrono Sport watch"
+              loading="lazy" />
+            <button
+              class="card__wishlist"
+              type="button"
+              aria-label="Save to wishlist"
+              aria-pressed="false">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true">
+                <path
+                  d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.6" />
+              </svg>
+            </button>
+            <span class="card__rating"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="m12 2 3.1 6.3 7 1-5 4.9 1.2 7-6.3-3.3L5.7 21l1.2-7-5-4.9 7-1Z" /></svg
+              >4.8 <i>(97)</i></span
+            >
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Aurelin Chrono Sport</h2>
+            <p class="card__desc">
+              Gunmetal chronograph with a maroon dial and tri-register layout.
+            </p>
+            <div class="card__specs">
+              <span>42mm</span><span>Chronograph</span><span>Silicone</span>
+            </div>
+            <p class="card__price">
+              <span
+                class="card__amount"
+                data-monthly="188"
+                data-yearly="2250"
+                >$2,250</span
+              >
+              <span class="card__period">one-time</span>
+            </p>
+            <button
+              class="card__cta"
+              type="button">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <p
+        class="empty-state"
+        id="emptyState"
+        hidden>
+        No watches in this category yet &mdash; try another filter.
+      </p>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__row">
+        <span
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <rect
+              x="5"
+              y="11"
+              width="14"
+              height="9"
+              rx="2"
+              stroke="currentColor"
+              stroke-width="1.3" />
+            <path
+              d="M8 11V7a4 4 0 0 1 8 0v4"
+              stroke="currentColor"
+              stroke-width="1.3" /></svg
+          >Secure checkout</span
+        >
+        <span
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <path
+              d="M3 12a9 9 0 0 1 15-6.7M21 12a9 9 0 0 1-15 6.7"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round" />
+            <path
+              d="M18 3v4h-4M6 21v-4h4"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round" /></svg
+          >Free 30-day returns</span
+        >
+        <span
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+              stroke="currentColor"
+              stroke-width="1.3" />
+            <path
+              d="M12 7v5l3.2 2"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round" /></svg
+          >5-year warranty</span
+        >
+      </div>
+      <p>Prices shown in USD. &copy; 2026 Aurelin Timepieces.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
