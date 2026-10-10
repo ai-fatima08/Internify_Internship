@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Nimbus Weather for Pakistan and Beyond</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body data-mood="sunny">
+    <div
+      class="bg"
+      aria-hidden="true">
+      <div class="bg__layer bg__layer--sunny"></div>
+      <div class="bg__layer bg__layer--cloudy"></div>
+      <div class="bg__layer bg__layer--rain"></div>
+      <div class="bg__layer bg__layer--night"></div>
+      <div class="bg__sun"></div>
+      <div class="bg__cloud bg__cloud--1"></div>
+      <div class="bg__cloud bg__cloud--2"></div>
+      <div class="bg__cloud bg__cloud--3"></div>
+      <div class="bg__cloud bg__cloud--4"></div>
+      <div class="bg__cloud bg__cloud--5"></div>
+      <div class="bg__cloud bg__cloud--6"></div>
+      <div class="bg__rain"></div>
+    </div>
+
+    <div class="page">
+      <header class="top">
+        <div class="top__logo">
+          <svg
+            class="top__mark"
+            viewBox="0 0 64 64"
+            aria-hidden="true">
+            <circle
+              cx="42"
+              cy="22"
+              r="11"
+              fill="#FFB347" />
+            <path
+              d="M14 50h32a10 10 0 0 0 1.7-19.9A14.5 14.5 0 0 0 20.3 27 11.2 11.2 0 0 0 14 50Z"
+              fill="#fff"
+              stroke="#F2D5C2"
+              stroke-width="2"
+              stroke-linejoin="round" />
+            <circle
+              cx="26"
+              cy="41"
+              r="1.9"
+              fill="#2D2A32" />
+            <circle
+              cx="36"
+              cy="41"
+              r="1.9"
+              fill="#2D2A32" />
+            <path
+              d="M27.5 45.5q3.5 3 7 0"
+              stroke="#2D2A32"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round" />
+          </svg>
+          NIMBUS
+        </div>
+        <p class="top__tag">Weather for Pakistan, and everywhere else too</p>
+      </header>
+
+      <section class="finder">
+        <form
+          class="search"
+          id="searchForm"
+          autocomplete="off">
+          <svg
+            class="search__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+              stroke="currentColor"
+              stroke-width="1.8" />
+            <path
+              d="m20 20-3.5-3.5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round" />
+          </svg>
+          <input
+            type="text"
+            id="cityInput"
+            placeholder="Search a Pakistani city, like Lahore"
+            aria-label="City name" />
+          <button
+            type="submit"
+            class="search__btn">
+            Search
+          </button>
+        </form>
+
+        <div class="controls">
+          <div
+            class="scope"
+            role="group"
+            aria-label="Where to search">
+            <button
+              type="button"
+              data-scope="PK"
+              aria-pressed="true">
+              Pakistan
+            </button>
+            <button
+              type="button"
+              data-scope="WORLD"
+              aria-pressed="false">
+              Worldwide
+            </button>
+          </div>
+
+          <div
+            class="recents"
+            id="recents"
+            hidden>
+            <span class="chips__label">Recent</span>
+            <div
+              class="chips"
+              id="recentsChips"></div>
+          </div>
+        </div>
+
+        <div class="popular">
+          <span class="chips__label">Popular in Pakistan</span>
+          <div
+            class="chips"
+            id="popularChips"></div>
+        </div>
+      </section>
+
+      <main
+        class="results"
+        id="results"
+        aria-live="polite"></main>
+
+      <footer class="bottom">
+        <p>
+          Forecast and air quality from Open&#8209;Meteo. Refreshed on every
+          search.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
